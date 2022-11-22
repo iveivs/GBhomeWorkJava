@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class sem1_task_1 {
+public class hw1_task_1 {
 
     public static void main(String[] args) {
         Scanner iScanner = new Scanner(System.in);
