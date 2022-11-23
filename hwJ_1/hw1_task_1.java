@@ -5,7 +5,7 @@ public class hw1_task_1 {
     public static void main(String[] args) {
         Scanner iScanner = new Scanner(System.in);
 
-        System.out.printf("int n: ");
+        System.out.printf("input n: ");
 
         int x = iScanner.nextInt();
 
