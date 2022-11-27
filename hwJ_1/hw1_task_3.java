@@ -2,48 +2,44 @@ import java.util.Scanner;
 
 public class hw1_task_3 {
     public static void main(String[] args) {
-
-        Scanner xScanner = new Scanner(System.in);
-
-        System.out.printf("input x: ");
-
-        int x = xScanner.nextInt();
-
-
-        Scanner yScanner = new Scanner(System.in);
-
-        System.out.printf("input y: ");
-
-        int y = yScanner.nextInt();
-
-
-        Scanner signScanner = new Scanner(System.in);
-
-        System.out.printf("input operation: ");
-
-        String sign = signScanner.nextLine();
-
-        
-
-        if (sign == "+") {
-            int res = 0;
-            res = x + y;
-            System.out.println(res);
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter the first number...");
+        int a = scanner.nextInt();
+        System.out.println("Enter the operator (+ - * /)...");
+        char op = scanner.next().charAt(0);
+        System.out.println("Enter the second number...");
+        int b = scanner.nextInt();
+        switch (op) {
+            case '+':
+                System.out.println(a + " + " + b + " = " + add(a, b));
+                break;
+            case '-':
+                System.out.println(a + " - " + b + " = " + minus(a, b));
+                break;
+            case '*':
+                System.out.println(a + " * " + b + " = " + mult(a, b));
+                break;
+            case '/':
+                System.out.println(a + " / " + b + " = " + divide(a, b));
+                break;
+            default:
+                System.out.println("Wrong operation!");
         }
-        else if (sign == "-") {
-            int res = 0;
-            res = x - y;
-            System.out.println(res);
-        }
-        else if (sign == "*") {
-            int res = 0;
-            res = x * y;
-            System.out.println(res);
-        }
-        else if (y != 0 && sign == "/") {
-            int res = 0;
-            res = x / y;
-            System.out.println(res);
-        }
+        scanner.close();
+    }
+    private static int divide(int a, int b) {
+        if (b != 0)
+            return a / b;
+        return -1;
+    }
+    private static int mult(int a, int b) {
+        return a * b;
+    }
+    private static int minus(int a, int b) {
+        return a - b;
+    }
+    private static int add(int a, int b) {
+        return a + b;
     }
 }
+
