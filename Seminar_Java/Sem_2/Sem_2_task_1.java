@@ -13,14 +13,14 @@ import java.util.Scanner;
 public class Sem_2_task_1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Ну и где ваша n ? Вводите уже:");
+        System.out.println("Введите n:");
         int n = scanner.nextInt();
 
-        System.out.println("Жду первый символ - c1:");
+        System.out.println("Первый символ - c1:");
         // String c1 = scanner.nextLine();
         char c1 = scanner.next().charAt(0);
 
-        System.out.println("Ну а теперь второй символ - c2:");
+        System.out.println("Второй символ - c2:");
         // String c2 = scanner.nextLine();
         char c2 = scanner.next().charAt(0);
 
