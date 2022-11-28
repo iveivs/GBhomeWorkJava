@@ -1,3 +1,8 @@
-line 1
-2
-line 3
+./file.txt
+./file1.txt
+./.DS_Store
+./hwJ_2
+./temp.java
+./Seminar_Java
+./.git
+./hwJ_1
