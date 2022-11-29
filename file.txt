@@ -3,6 +3,7 @@
 ./.DS_Store
 ./hwJ_2
 ./temp.java
+./.gitignore
 ./Seminar_Java
 ./.git
 ./hwJ_1
