@@ -6,6 +6,9 @@ import java.util.List;
 
 
 public class Sem_2_task_5 {
+    /**
+     * @param args
+     */
     public static void main(String[] args) {
         File dir = new File(".");
 
