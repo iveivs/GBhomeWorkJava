@@ -17,7 +17,7 @@ public class Sem_2_task_5 {
             } else {
                 System.out.println(file.getName());
             }
-            
+
         try (FileWriter fw = new FileWriter("file.txt", false)) {
             for (File f : filesList) {
                 fw.write(f.toString());
