@@ -15,17 +15,17 @@ public class Laptops {
     }
 
     public String toString(int number) {
-        String temp = this.oS ? "Male" : "Female";
-        return "Cat's number: " + number + "\n" +
+        String temp = this.oS ? "Have Os" : "Doesn't have Os";
+        return "Laptop's number: " + number + "\n" +
                 "Name: " + name + "\n" +
                 "OperationSystem: " + temp + "\n" +
                 "Display Size: " + dispSize + "\n" +
                 "Age: " + age + "\n";
         }
 
-    public StringBuilder GetCatsByGender(Laptops[] cats, boolean gender) {
+    public StringBuilder GetLaptopOs(Laptops[] lapt, boolean oS) {
         StringBuilder result = new StringBuilder();
-        for (Laptops c: cats) {
+        for (Laptops c: lapt) {
             if (c.oS==oS){
                 result.append(c.name);
                 result.append(" ");
