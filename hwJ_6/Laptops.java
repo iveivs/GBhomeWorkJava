@@ -1,4 +1,5 @@
 package hwJ_6;
+import java.util.Scanner;
 
 public class Laptops {
     int id;
@@ -23,18 +24,65 @@ public class Laptops {
                 "Age: " + age + "\n";
         }
 
-    public StringBuilder GetLaptopOs(Laptops[] lapt, boolean oS) {
+    
+    public StringBuilder HaveOrNotOs(Laptops[] lapt, boolean oS) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Введите '1' если нужна модель с ОС, если без ОС то введите '2'...");
+        int num = scanner.nextInt();
         StringBuilder result = new StringBuilder();
-        for (Laptops c: lapt) {
-            if (c.oS==oS){
-                result.append(c.name);
-                result.append(" ");
+        if (num == 1){
+            oS = true;
+            for (Laptops c: lapt) {
+                if (c.oS==oS){
+                    result.append(c.name);
+                    result.append(" ");
+                }
             }
         }
-        return result;
+        if (num == 2){
+            oS = false;
+            for (Laptops c: lapt) {
+                if (c.oS==oS){
+                    result.append(c.name);
+                    result.append(" ");
+                }
+            }
+        }
+        scanner.close(); 
+        return result;          
     }
+            
+        
 }
 
 
     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // public StringBuilder GetLaptopOs(Laptops[] lapt, boolean oS) {
+    //     StringBuilder result = new StringBuilder();
+    //     for (Laptops c: lapt) {
+    //         if (c.oS==oS){
+    //             result.append(c.name);
+    //             result.append(" ");
+    //         }
+    //     }
+    //     return result;
+    // }
 

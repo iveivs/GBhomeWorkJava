@@ -5,13 +5,11 @@ public class solution_6 {
         Laptops item1 = new Laptops(1,"Acer", 2021, 17, true);
         Laptops item2 = new Laptops(1,"HP", 2020, 15, false);
         Laptops item3 = new Laptops(1,"Asus", 2021, 17, true);
+        Laptops item4 = new Laptops(1,"Lenovo", 2020, 14, false);
         
-        System.out.println(item1.toString(1));
-        System.out.println(item2.toString(2));
-        
-        Laptops[] lapt = new Laptops[]{item1, item2, item3};
 
-        System.out.println(item1.GetLaptopOs(lapt, true));
-    
+        Laptops[] lapt = new Laptops[]{item1, item2, item3, item4};
+        
+        System.out.println(item1.HaveOrNotOs(lapt, true));
     }
 }
